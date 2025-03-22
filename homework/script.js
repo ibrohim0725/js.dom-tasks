@@ -22,7 +22,6 @@ function addCards() {
   div.style.cssText = `
   border-radius:80px;
    display:flex;
-   
     width:100%
    flex-wrap:wrap;
   `;
