@@ -8,13 +8,9 @@
   }
   @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Big Shoulders';
+    font-family: 'Big Shoulders ';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/big-shoulders-v2-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-  font-family: 'Big Shoulders';
-  font-weight: 700;
-
-  font-family: 'Lexend Deca';
-  font-weight: 400;
+ 

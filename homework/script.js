@@ -1,13 +1,13 @@
 const body = document.body;
 const general = `
-// <style>
-// *{
-//      padding: 0;
-//      margin: 0;
-//      box-sizing: border-box;
-// }
-// </style>
-// `;
+<style>
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+</style>
+`;
 function styleBody() {
   body.style.cssText = `
      display:flex;
@@ -42,6 +42,8 @@ function addCards() {
   const title = document.createElement("h1");
   title.innerText = "Sedans";
   title.style.cssText = `
+   font-family: 'Big Shoulders';
+  font-weight: 700;
      text-align: left;
      color:#FFFFFF;
      font-size: 48px;
@@ -73,9 +75,6 @@ function addCards() {
   line-height:25px;
   `;
 
-
-
-
   const div2 = document.createElement("div");
   div2.style.cssText = `
       background-color:#006971;
@@ -93,14 +92,17 @@ function addCards() {
   title2.innerText = "SUVS";
   title2.style.cssText = `
      text-align: left;
+      font-family: 'Big Shoulders';
+     font-weight: 700;
      color:#FFFFFF;
      font-size: 48px;
      margin-bottom:25px;
   `;
 
   const desc2 = document.createElement("p");
-  desc2.innerText ='Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.'
-   desc2.style.cssText = `
+  desc2.innerText =
+    "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.";
+  desc2.style.cssText = `
     font-family: 'Lexend Deca';
   font-weight: 400;
     color:#FFFFFF;
@@ -122,9 +124,6 @@ function addCards() {
   line-height:25px;
   `;
 
-
-
-  
   const div3 = document.createElement("div");
   div3.style.cssText = `
       background-color:#004140;
@@ -142,14 +141,17 @@ function addCards() {
   title3.innerText = "LUXURY";
   title3.style.cssText = `
      text-align: left;
+      font-family: 'Big Shoulders';
+      font-weight: 700;
      color:#FFFFFF;
      font-size: 48px;
      margin-bottom:25px;
   `;
 
   const desc3 = document.createElement("p");
-  desc3.innerText ='Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. '
-   desc3.style.cssText = `
+  desc3.innerText =
+    "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. ";
+  desc3.style.cssText = `
     font-family: 'Lexend Deca';
   font-weight: 400;
     color:#FFFFFF;
@@ -171,10 +173,10 @@ function addCards() {
   line-height:25px;
   `;
 
-  div3.append(img3,title3,desc3,button3)
-  div2.append(img2, title2, desc2, button2)
+  div3.append(img3, title3, desc3, button3);
+  div2.append(img2, title2, desc2, button2);
   div1.append(img, title, desc, button);
-  div.append(div1,div2,div3);
+  div.append(div1, div2, div3);
   body.append(div);
 }
 
