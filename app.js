@@ -16,7 +16,6 @@ function styleBody() {
   body.style.cssText = `
      background-color: #141414;
      display:flex;
-     aligin-items:center;
      justify-content:center;
      height:100%;
     `;
@@ -99,5 +98,19 @@ links.forEach((el)=>{
   body.append(div);
 }
 
+function linkNextPage(){
+
+   const a=document.createElement("a")
+   a.href="./homework/index.html"
+   a.textContent="Next Page"
+   a.style.cssText=`
+   text-decoration:none;
+   color:white;
+   margin-right:-50px;
+   margin-top:700px;
+ `
+ body.appendChild(a)
+}
 styleBody();
 createCard();
+linkNextPage()
